@@ -1,0 +1,14 @@
+:root {
+  --primary-purple: #854dff;
+  --primary-red: #ff5757;
+
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-off-white: hsl(0, 0%, 94%);
+  --neutral-light-gray: hsl(0, 0%, 86%);
+  --neutral-smoke-gray: hsl(0, 1%, 44%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+}
+
+.body {
+  background-color: var(--neutral-light-gray);
+}
