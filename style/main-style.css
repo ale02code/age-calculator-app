@@ -63,6 +63,10 @@
   border: var(--neutral-smoke-gray) solid 1px;
 }
 
+.information-container__item>input:focus {
+  border-color: var(--primary-purple);
+}
+
 .divisor-sections {
   height: 75px;
   display: flex;
@@ -78,6 +82,10 @@
   background-color: var(--primary-purple);
   padding: .5rem;
   border-radius: 50%;
+}
+
+.divisor-sections>img:hover {
+  background-color: var(--neutral-off-black);
 }
 
 .line-divider {
