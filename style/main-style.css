@@ -120,3 +120,14 @@
 .label-error {
   color: var(--primary-red);
 }
+
+@media screen and (min-width: 500px) {
+  .main-container {
+    max-width: 440px;
+    max-height: 440px;
+  }
+
+  .age-container {
+    font-size: 38px;
+  }
+}

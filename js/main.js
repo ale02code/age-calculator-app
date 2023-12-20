@@ -26,7 +26,7 @@ function getAge() {
 
   const dateComparative = new Date();
   const currentDay = dateComparative.getDate();
-  const currentMonth = dateComparative.getMonth();
+  const currentMonth = dateComparative.getMonth() + 1;
   const currentYear = dateComparative.getFullYear();
 
   const changeErrorMode = () => {
@@ -52,13 +52,9 @@ function getAge() {
     changeErrorMode()
   } else {
     daySpanResult.textContent = (currentDay - day);
-    monthSpanResult.textContent = ((currentMonth - month) + 1);
+    monthSpanResult.textContent = (currentMonth - month);
     yearSpanResult.textContent = (currentYear - year);
   }
-
-  const Age = "12"
-
-  return console.log(Age, getTimeDate)
 }
 
 arrowResult.addEventListener('click', getAge);
