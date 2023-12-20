@@ -19,16 +19,19 @@
   <main class="main-container">
     <section class="information-container">
       <div class="information-container__item">
-        <label for="put-day">D A Y</label>
-        <input type="number" name="put-day" id="put-day" placeholder="DD">
+        <label for="put-day" class="label-date-input">D A Y</label>
+        <input type="number" name="put-day" id="put-day" placeholder="DD" class="input-date">
+        <p class="date-false" id="day-error"></p>
       </div>
       <div class="information-container__item">
-        <label for="put-month">M O N T H</label>
-        <input type="number" name="put-month" id="put-month" placeholder="MM">
+        <label for="put-month" class="label-date-input">M O N T H</label>
+        <input type="number" name="put-month" id="put-month" placeholder="MM" class="input-date">
+        <p class="date-false" id="month-error"></p>
       </div>
       <div class="information-container__item">
-        <label for="put-year">Y E A R</label>
-        <input type="number" name="put-year" id="put-year" placeholder="YYYY">
+        <label for="put-year" class="label-date-input">Y E A R</label>
+        <input type="number" name="put-year" id="put-year" placeholder="YYYY" class="input-date">
+        <p class="date-false" id="year-error"></p>
       </div>
     </section>
     <div class="divisor-sections">
@@ -36,9 +39,9 @@
       <img src="assets/images/icon-arrow.svg" alt="Icon Row Result" class="image-arrow">
     </div>
     <section class="age-container">
-      <p><span>--</span>years</p>
-      <p><span>--</span>months</p>
-      <p><span>--</span>days</p>
+      <p><span id="years-date-result">--</span>years</p>
+      <p><span id="months-date-result">--</span>months</p>
+      <p><span id="days-date-result">--</span>days</p>
     </section>
   </main>
   <script src="js/main.js"></script>

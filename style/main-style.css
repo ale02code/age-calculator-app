@@ -39,7 +39,7 @@
   align-items: center;
 }
 
-.information-container__item>label {
+.label-date-input {
   color: var(--neutral-smoke-gray);
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -52,7 +52,7 @@
   overflow: hidden;
 }
 
-.information-container__item>input {
+.input-date {
   width: 100%;
   border: none;
   outline: none;
@@ -105,4 +105,18 @@
   font-size: 1.6rem;
   line-height: 1.7rem;
   font-style: italic;
+}
+
+.date-false {
+  color: var(--primary-red);
+  font-size: 12px;
+
+}
+
+.input-error {
+  border: var(--primary-red) 1px solid;
+}
+
+.label-error {
+  color: var(--primary-red);
 }
