@@ -16,6 +16,9 @@ const daySpanResult = document.getElementById("days-date-result");
 const monthSpanResult = document.getElementById("months-date-result");
 const yearSpanResult = document.getElementById("years-date-result");
 
+const dateToGetYear = new Date();
+const getYearToComparative = dateToGetYear.getFullYear();
+
 function getAge() {
   const day = dayInput.value;
   const month = monthInput.value;
@@ -34,7 +37,7 @@ function getAge() {
     yearError.textContent = "This field is required";
 
     changeErrorMode();
-  } else if (year > currentYear) {
+  } else if (year > getYearToComparative) {
 
     dayError.textContent = "Must be a valid day";
     monthError.textContent = "Must be a valid month";
