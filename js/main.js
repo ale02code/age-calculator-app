@@ -23,7 +23,6 @@ function getAge() {
   const valueDate = new Date(`${year}-${month}-${day}`);
   const getTimeDate = !isNaN(valueDate.getTime())
 
-
   const changeErrorMode = () => {
     labels.forEach(label => label.classList.add("label-error"))
     inputs.forEach(input => input.classList.add("input-error"))
@@ -60,8 +59,6 @@ function getAge() {
     monthSpanResult.textContent = (getMonth);
     yearSpanResult.textContent = (getYear);
   }
-
-
 }
 
 arrowResult.addEventListener('click', getAge);
