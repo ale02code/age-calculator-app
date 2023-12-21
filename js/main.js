@@ -53,7 +53,7 @@ function getAge() {
     const dateDiff = Date.now() - dateOutput;
     const ageDate = new Date(dateDiff);
 
-    const getDay = ageDate.getUTCDay() - 1;
+    const getDay = ageDate.getUTCDate() - 1;
     const getMonth = ageDate.getUTCMonth();
     const getYear = ageDate.getUTCFullYear() - 1970;
 
