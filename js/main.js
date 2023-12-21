@@ -24,11 +24,6 @@ function getAge() {
   const getTimeDate = !isNaN(valueDate.getTime())
 
 
-  const dateComparative = new Date();
-  const currentDay = dateComparative.getDate();
-  const currentMonth = dateComparative.getMonth() + 1;
-  const currentYear = dateComparative.getFullYear();
-
   const changeErrorMode = () => {
     labels.forEach(label => label.classList.add("label-error"))
     inputs.forEach(input => input.classList.add("input-error"))
@@ -51,9 +46,16 @@ function getAge() {
 
     changeErrorMode()
   } else {
-    daySpanResult.textContent = (currentDay - day);
-    monthSpanResult.textContent = (currentMonth - month);
-    yearSpanResult.textContent = (currentYear - year);
+
+    return const dateComparative = new Date(valueDate);
+    // const currentDay = dateComparative.getDate();
+    // const currentMonth = dateComparative.getMonth() + 1;
+    // const currentYear = dateComparative.getFullYear();
+
+    // Output
+    // daySpanResult.textContent = (currentDay - day);
+    // monthSpanResult.textContent = (currentMonth - month);
+    // yearSpanResult.textContent = (currentYear - year);
   }
 }
 
