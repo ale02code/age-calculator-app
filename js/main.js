@@ -36,6 +36,7 @@ function getAge() {
 
     changeErrorMode();
   } else if (year > currentYear) {
+
     dayError.textContent = "Must be a valid day";
     monthError.textContent = "Must be a valid month";
     yearError.textContent = "Must be in the past";
@@ -46,17 +47,21 @@ function getAge() {
 
     changeErrorMode()
   } else {
+    const dateOutput = new Date(valueDate);
+    const dateDiff = Date.now() - dateOutput;
+    const ageDate = new Date(dateDiff);
 
-    return const dateComparative = new Date(valueDate);
-    // const currentDay = dateComparative.getDate();
-    // const currentMonth = dateComparative.getMonth() + 1;
-    // const currentYear = dateComparative.getFullYear();
+    const getDay = ageDate.getUTCDay() - 1;
+    const getMonth = ageDate.getUTCMonth();
+    const getYear = ageDate.getUTCFullYear() - 1970;
 
     // Output
-    // daySpanResult.textContent = (currentDay - day);
-    // monthSpanResult.textContent = (currentMonth - month);
-    // yearSpanResult.textContent = (currentYear - year);
+    daySpanResult.textContent = (getDay);
+    monthSpanResult.textContent = (getMonth);
+    yearSpanResult.textContent = (getYear);
   }
+
+
 }
 
 arrowResult.addEventListener('click', getAge);
