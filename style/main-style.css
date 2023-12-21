@@ -107,10 +107,14 @@
   font-style: italic;
 }
 
+.date-default {
+  display: none;
+}
+
 .date-false {
+  display: block;
   color: var(--primary-red);
   font-size: 12px;
-
 }
 
 .input-error {
